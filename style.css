@@ -16,7 +16,7 @@ textarea {
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: white;
   border-radius: 0;
   border-bottom: 10px solid black;
   background-image: url(https://images.pexels.com/photos/4175054/pexels-photo-4175054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
@@ -34,12 +34,28 @@ textarea {
 .time-block {
   text-align: center;
   border-radius: 15px;
+  padding: 10px;
+  display: block;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+}
+
+.column {
+  float: left;
+  width: 100%;
+}
+
+.leftColumn,
+.rightColumn {
+  width: 25%;
+}
+
+.input {
+  width: 50%;
 }
 
 .hour {
@@ -69,6 +85,7 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  width: 25%;
 }
 
 .saveBtn i:hover {
