@@ -6,27 +6,27 @@ var clearBtn = $(".clearBtn");
 $("#currentDay").text(todaysDateEl);
 
 window.onload = function() {
-    document.getElementById('9AM').innerText = localStorage.getItem(time, input);
-    document.getElementById('10AM').innerText = localStorage.getItem(time, input);
-    document.getElementById('11AM').innerText = localStorage.getItem(time, input);
-    document.getElementById('12PM').innerText = localStorage.getItem(time, input);
-    document.getElementById('1PM').innerText = localStorage.getItem(time, input);
-    document.getElementById('2PM').innerText = localStorage.getItem(time, input);
-    document.getElementById('3PM').innerText = localStorage.getItem(time, input);
-    document.getElementById('4PM').innerText = localStorage.getItem(time, input);
-    document.getElementById('5PM').innerText = localStorage.getItem(time, input);
+    $('#9AM').val(localStorage.getItem(9));
+    $('#10AM').val(localStorage.getItem(10));
+    $('#11AM').val(localStorage.getItem(11));
+    $('#12PM').val(localStorage.getItem(12));
+    $('#1PM').val(localStorage.getItem(13));
+    $('#2PM').val(localStorage.getItem(14));
+    $('#3PM').val(localStorage.getItem(15));
+    $('#4PM').val(localStorage.getItem(16));
+    $('#5PM').val(localStorage.getItem(17));
 }
 
 function colorCodeInputs() {
     var currentTimeEL = now.format("H");
 
     $(".row").each(function () {
-        var currentHour = parseInt($(this).attr("data-hr"));
-
+        var currentHour = parseInt($(this).children(".time-block").attr("data-hr"));
+console.log(currentHour + " " + currentTimeEL);
         if (currentHour > currentTimeEL) {
             $(this).addClass("future");
         }
-        else if (currentHour === currentTimeEL) {
+        else if (currentHour == currentTimeEL) {
             $(this).addClass("present");
         }
         else {
@@ -38,14 +38,17 @@ function colorCodeInputs() {
 
 saveBtn.on("click", function () {
 
-    var time = $(this).siblings("data-hour").text();
+    var time = $(this).siblings(".time-block").attr("data-hr");
     var input = $(this).siblings(".input").val();
 
     localStorage.setItem(time, input);
 });
 
 clearBtn.on('click', function () {
-    $(this).localStorage.removeItem(time, input);
+    var time = $(this).siblings(".time-block").attr("data-hr");
+    $(this).siblings(".input").val("");
+
+    localStorage.removeItem(time);
 
 
 });
