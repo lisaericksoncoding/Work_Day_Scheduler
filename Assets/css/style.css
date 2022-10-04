@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
 }
 
@@ -23,12 +23,19 @@ textarea {
 }
 
 .lead {
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: underline;
+}
+#currentDay {
+ text-decoration: none;
 }
 
 .description {
   white-space: pre-wrap;
+}
+
+.container {
+  width: 100%;
 }
 
 .time-block {
@@ -36,36 +43,35 @@ textarea {
   border-radius: 15px;
   padding: 10px;
   display: block;
+  background-color: #B991A4;
+  width: 10%;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  border-radius: 15px;
 }
 
 .column {
   float: left;
   width: 100%;
 }
-
-.leftColumn,
-.rightColumn {
-  width: 25%;
-}
-
 .input {
-  width: 50%;
+  width: 70%;
+
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #b99691;
   color: #000000;
   border-top: 1px dashed #000000;
+  
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: rgb(86, 86, 88);
   color: white;
 }
 
@@ -81,14 +87,25 @@ textarea {
 
 .saveBtn {
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  border-radius: 15px;
+  background-color: #B991A4;
   color: white;
-  width: 25%;
+  width: 10%;
 }
 
 .saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.clearBtn {
+  border-left: 1px solid black;
+  border-radius: 15px;
+  background-color: #B991A4;
+  color: white;
+  width: 10%;
+}
+
+.clearBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
