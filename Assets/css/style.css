@@ -1,0 +1,111 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+  background-image: url(https://images.pexels.com/photos/4175054/pexels-photo-4175054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+.lead {
+  font-weight: 400;
+  text-decoration: underline;
+}
+#currentDay {
+ text-decoration: none;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.container {
+  width: 100%;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  display: block;
+  background-color: #B991A4;
+  width: 10%;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+  border-radius: 15px;
+}
+
+.column {
+  float: left;
+  width: 100%;
+}
+.input {
+  width: 70%;
+
+}
+
+.hour {
+  background-color: #b99691;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  
+}
+
+.past {
+  background-color: rgb(86, 86, 88);
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-radius: 15px;
+  background-color: #B991A4;
+  color: white;
+  width: 10%;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.clearBtn {
+  border-left: 1px solid black;
+  border-radius: 15px;
+  background-color: #B991A4;
+  color: white;
+  width: 10%;
+}
+
+.clearBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
